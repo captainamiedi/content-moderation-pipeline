@@ -51,9 +51,9 @@ moderator.train(X_train, y_train)
 text = "I will hurt you if you don't comply!"
 result, confidence = moderator.predict(text)
 
+print(f"Result: {'HARMFUL' if result else 'SAFE'} (Confidence: {confidence:.2f})")
 ```
 
-print(f"Result: {'HARMFUL' if result else 'SAFE'} (Confidence: {confidence:.2f})")
 
 | **Test Case**              | **Prediction** | **Confidence** | **Latency** |
 | -------------------------- | -------------- | -------------- | ----------- |
@@ -62,8 +62,10 @@ print(f"Result: {'HARMFUL' if result else 'SAFE'} (Confidence: {confidence:.2f})
 | "Buy illegal drugs"        | HARMFUL        | 0.95           | 60ms        |
 
 
+```bash
 .
 ├── moderator.py        # Core moderation logic
 ├── train.py            # Training script
 ├── requirements.txt    # Project dependencies
 └── README.md           # Project documentation
+```

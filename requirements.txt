@@ -1,0 +1,7 @@
+scipy
+numpy
+torch
+torch-geometric
+transformers
+scikit-learn
+spacy 

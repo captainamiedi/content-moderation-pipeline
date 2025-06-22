@@ -55,11 +55,11 @@ print(f"Result: {'HARMFUL' if result else 'SAFE'} (Confidence: {confidence:.2f})
 ```
 
 
-| **Test Case**              | **Prediction** | **Confidence** | **Latency** |
-| -------------------------- | -------------- | -------------- | ----------- |
-| "Kill all enemies"         | HARMFUL        | 0.95           | 50ms        |
-| "Let's discuss peacefully" | SAFE           | 0.90           | 120ms       |
-| "Buy illegal drugs"        | HARMFUL        | 0.95           | 60ms        |
+| **Test Case**              | **Prediction** | **Latency** |
+| -------------------------- | -------------- | ----------- |
+| "Kill all enemies"         | HARMFUL        | 50ms        |
+| "Let's discuss peacefully" | SAFE           | 120ms       |
+| "Buy illegal drugs"        | HARMFUL        | 60ms        |
 
 
 ```bash
